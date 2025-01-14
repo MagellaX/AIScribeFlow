@@ -3,9 +3,9 @@ from textwrap import dedent
 from crewai import Agent
 from crewai_tools import ScrapeWebsiteTool
 
-from tweetcrafter.callbacks import step_callback
-from tweetcrafter.config import Config
-from tweetcrafter.tools import read_tweets, save_tweet
+from AIScribeFlow.callbacks import step_callback
+from AIScribeFlow.config import Config
+from AIScribeFlow.tools import read_tweets, save_tweet
 
 scrape_tool = ScrapeWebsiteTool()
 
@@ -15,7 +15,7 @@ def scraper_agent(llm) -> Agent:
         role="Senior Website Scraper",
         goal="Scrape the content from the provided URLs and return the text data",
         backstory=dedent("""
-            You are an experienced software engineer who is master at scraping various web data (sites, images, videos).
+            You are an experienced software engineer who is a master at scraping various web data (sites, images, videos).
             Your role is to read the content from provided URLs using `scrape_tool` and extract the text.
         """),
         llm=llm,
