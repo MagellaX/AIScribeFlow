@@ -1,15 +1,15 @@
 from crewai import Crew, Process
 from dotenv import load_dotenv
 
-from tweetcrafter.agents import (
+from AIScribeFlow.agents import (
     editor_agent,
     researcher_agent,
     scraper_agent,
     writer_agent,
 )
-from tweetcrafter.config import Config
-from tweetcrafter.models import create_model
-from tweetcrafter.tasks import (
+from AIScribeFlow.config import Config
+from AIScribeFlow.models import create_model
+from AIScribeFlow.tasks import (
     edit_task,
     research_content_task,
     scrape_content_task,
