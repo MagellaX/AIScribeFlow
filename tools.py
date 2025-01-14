@@ -1,6 +1,6 @@
 from crewai_tools import tool
 
-from tweetcrafter.config import Config
+from AIscribeFlow.config import Config
 
 
 @tool("save_tweet")
