@@ -1,4 +1,4 @@
-# AIscibeflow
+# AIscribeflow
 
 A multi-agent system leveraging CrewAI architecture for automated technical content generation, implementing distributed task execution across specialized agents for content research, composition, and refinement.
 
