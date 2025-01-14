@@ -1,8 +1,8 @@
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 
-from AIscribeFlow.callbacks import LLMCallbackHandler
-from AIscribeFlow.config import Config, Model
+from AIScribeFlow.callbacks import LLMCallbackHandler
+from AIScribeFlow.config import Config, Model
 
 
 def create_model(model: Model):
