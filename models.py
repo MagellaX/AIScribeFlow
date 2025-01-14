@@ -1,8 +1,8 @@
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 
-from tweetcrafter.callbacks import LLMCallbackHandler
-from tweetcrafter.config import Config, Model
+from AIscribeFlow.callbacks import LLMCallbackHandler
+from AIscribeFlow.config import Config, Model
 
 
 def create_model(model: Model):
